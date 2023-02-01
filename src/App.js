@@ -1,22 +1,20 @@
+import Header from "./components/Header/Header"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import Layout from "./components/Layout/Layout";
+import LoginContainer from "./components/LoginContainer/LoginContainer";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-        <p>
-          Hola como estan?
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          documentación
-        </a>
-      </header>
+      <Layout>
+      <Header/>
+      <LoginContainer/>
+      <ItemListContainer usuario="Maria" apellido="Lopez" edad="22"/>
+      </Layout>
     </div>
-  );
+  )
 }
 
 export default App;
+
+//<Navbar /> === Navbar()
